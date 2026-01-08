@@ -6,7 +6,8 @@
   "scripts": {
     "android": "react-native run-android",
     "start": "react-native start",
-    "test": "echo \"No tests\" && exit 0"
+    "test": "echo \"No tests\" && exit 0",
+    "postinstall": "patch-package"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +18,11 @@
     "react-native-sqlite-storage": "^6.0.1"
   },
   "devDependencies": {
+    "@react-native-community/cli": "12.3.6",
+    "@react-native-community/cli-platform-android": "12.3.6",
     "@react-native/babel-preset": "0.73.21",
     "@react-native/metro-config": "0.73.5",
-    "@react-native-community/cli": "12.3.6",
-    "@react-native-community/cli-platform-android": "12.3.6"
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0"
   }
 }
