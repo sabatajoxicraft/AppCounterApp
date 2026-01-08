@@ -6,6 +6,15 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'AppCounterApp'
+plugins {
+    id("com.facebook.react.settings")
+}
 
+extensions.configure(com.facebook.react.ReactSettingsExtension){ react ->
+    react.autolinkLibrariesFromCommand()
+}
+
+rootProject.name = 'AppCounterApp'
+apply from: file("../node_modules/@react-native/gradle-plugin/settings.gradle")
 include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
