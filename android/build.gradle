@@ -17,11 +17,19 @@ buildscript {
     }
 }
 
-// Apply namespace fix for react-native-sqlite-storage
-apply from: "gradle/react-native-sqlite-storage.gradle"
-
 allprojects {
     repositories {
         // Already defined in settings.gradle with dependencyResolutionManagement
+    }
+}
+
+// Add namespace to react-native-sqlite-storage if missing
+subprojects { subproject ->
+    afterEvaluate {
+        if (subproject.name == 'react-native-sqlite-storage') {
+            if (subproject.hasProperty('android') && subproject.android.hasProperty('namespace') && !subproject.android.namespace) {
+                subproject.android.namespace = 'org.pgsqlite'
+            }
+        }
     }
 }
