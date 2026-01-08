@@ -1,0 +1,25 @@
+{
+  "name": "appcounterapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "start": "react-native start",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.76.6",
+    "react-native-sqlite-storage": "^6.0.1"
+  },
+  "devDependencies": {
+    "@react-native/babel-preset": "0.76.6",
+    "@react-native/metro-config": "0.76.6",
+    "@react-native-community/cli": "14.1.0",
+    "@react-native-community/cli-platform-android": "14.1.0"
+  }
+}
