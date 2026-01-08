@@ -6,6 +6,7 @@ buildscript {
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
         kotlinVersion = "1.9.22"
+        reactNativeVersion = "0.73.6"
     }
     repositories {
         google()
@@ -30,6 +31,14 @@ subprojects { subproject ->
             if (subproject.hasProperty('android') && subproject.android.hasProperty('namespace') && !subproject.android.namespace) {
                 subproject.android.namespace = 'org.pgsqlite'
             }
+        }
+    }
+    
+    // Force React Native version for all dependencies
+    configurations.all {
+        resolutionStrategy {
+            force "com.facebook.react:react-android:${reactNativeVersion}"
+            force "com.facebook.react:hermes-android:${reactNativeVersion}"
         }
     }
 }
