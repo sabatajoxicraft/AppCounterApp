@@ -22,5 +22,13 @@ allprojects {
         google()
         mavenCentral()
         maven { url 'https://www.jitpack.io' }
+        maven {
+            // React Native from node_modules
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // JSC from node_modules
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
     }
 }
