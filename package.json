@@ -13,13 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.76.6",
+    "react-native": "0.73.6",
     "react-native-sqlite-storage": "^6.0.1"
   },
   "devDependencies": {
-    "@react-native/babel-preset": "0.76.6",
-    "@react-native/metro-config": "0.76.6",
-    "@react-native-community/cli": "14.1.0",
-    "@react-native-community/cli-platform-android": "14.1.0"
+    "@react-native/babel-preset": "0.73.21",
+    "@react-native/metro-config": "0.73.5",
+    "@react-native-community/cli": "12.3.6",
+    "@react-native-community/cli-platform-android": "12.3.6"
   }
 }
