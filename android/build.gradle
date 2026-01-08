@@ -23,13 +23,3 @@ allprojects {
         // Already defined in settings.gradle with dependencyResolutionManagement
     }
 }
-
-// Force React Native version for all dependencies
-subprojects {
-    configurations.all {
-        resolutionStrategy {
-            force "com.facebook.react:react-android:${reactNativeVersion}"
-            force "com.facebook.react:hermes-android:${reactNativeVersion}"
-        }
-    }
-}
