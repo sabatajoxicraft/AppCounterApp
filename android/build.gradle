@@ -17,6 +17,9 @@ buildscript {
     }
 }
 
+// Apply namespace fix for react-native-sqlite-storage
+apply from: "gradle/react-native-sqlite-storage.gradle"
+
 allprojects {
     repositories {
         // Already defined in settings.gradle with dependencyResolutionManagement
