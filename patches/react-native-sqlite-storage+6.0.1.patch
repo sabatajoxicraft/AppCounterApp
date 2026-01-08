@@ -1,5 +1,5 @@
 diff --git a/node_modules/react-native-sqlite-storage/platforms/android/build.gradle b/node_modules/react-native-sqlite-storage/platforms/android/build.gradle
-index ff79b10..8c49a80 100644
+index ff79b10..458ac16 100644
 --- a/node_modules/react-native-sqlite-storage/platforms/android/build.gradle
 +++ b/node_modules/react-native-sqlite-storage/platforms/android/build.gradle
 @@ -16,6 +16,7 @@ def safeExtGet(prop, fallback) {
@@ -15,5 +15,5 @@ index ff79b10..8c49a80 100644
  
  dependencies {
 -    implementation 'com.facebook.react:react-native:+'
-+    implementation project(':react-native')
++    implementation "com.facebook.react:react-android"
  }
