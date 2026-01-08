@@ -9,6 +9,7 @@ android/app/build/
 android/.gradle/
 android/gradle/
 !android/gradle/wrapper/gradle-wrapper.properties
+!android/gradle/react-native-sqlite-storage.gradle
 android/local.properties
 
 # iOS (not used but standard)
