@@ -1,7 +1,7 @@
 {
   "name": "appcounterapp",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Production-ready React Native Android template - Battle-tested CI/CD, SQLite, Termux-compatible",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
